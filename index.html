@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details Entry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Details Entry</h1>
+    <div class="form-container">
+        <form id="bookForm" action="/submit-book" method="post">
+            <div class="form-group">
+                <label for="book">Select Book:</label>
+                <select id="book" name="book" required>
+                    <option value="">-- Select Book --</option>
+                    <option value="bhagvat">Bhagvat</option>
+                    <option value="vachanamrut">Vachanamrut</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="edition">Edition:</label>
+                <input type="text" id="edition" name="edition" placeholder="Enter book edition" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mainCategory">Main Sanskar Category:</label>
+                <select id="mainCategory" name="mainCategory" required>
+                    <option value="">-- Select Main Category --</option>
+                    <option value="subject_sanskar">Subject Sanskar</option>
+                    <option value="shanti">Shanti</option>
+                    <option value="gyan">Gyan</option>
+                    <option value="bhakti">Bhakti</option>
+                    <option value="vairagya">Vairagya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="subCategory">Sub Category:</label>
+                <select id="subCategory" name="subCategory" required>
+                    <option value="">-- Select Sub Category --</option>
+                    <option value="bal_sanskar">Bal Sanskar</option>
+                    <option value="parent_sanskar">Parent Sanskar</option>
+                    <option value="sadhu_sanskar">Sadhu Sanskar</option>
+                    <option value="shishu_sanskar">Shishu Sanskar</option>
+                    <option value="yuvak_sanskar">Yuvak Sanskar</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="prasangDate">Prasang Date:</label>
+                <input type="date" id="prasangDate" name="prasangDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" placeholder="Enter the text content here..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Save Information</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // You can add JavaScript here for form validation or dynamic behavior
+        document.getElementById('bookForm').addEventListener('submit', function(e) {
+            // Form validation can be added here
+            alert('')
+            console.log('Form submitted');
+            // e.preventDefault(); // Uncomment to prevent actual submission for testing
+        });
+    </script>
+</body>
+</html>
