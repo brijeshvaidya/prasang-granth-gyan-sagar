@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <title>Entry Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      max-width: 800px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+    .button-group {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 16px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>પુસ્તક માહિતી એન્ટ્રી ફોર્મ</h2>
+
+  <form>
+    <label for="pustakNaam">પુસ્તક નું નામ:</label>
+    <input type="text" id="pustakNaam" name="pustakNaam">
+
+    <label for="pustakAvrut">પુસ્તક ની આવૃત્તિ:</label>
+    <input type="text" id="pustakAvrut" name="pustakAvrut">
+
+    <label for="panaNumber">પાના નંબર:</label>
+    <input type="text" id="panaNumber" name="panaNumber">
+
+    <label for="mukhyaVishay">મુખ્ય વિષય:</label>
+    <input type="text" id="mukhyaVishay" name="mukhyaVishay">
+
+    <label for="petaVishay">પેટા વિષય:</label>
+    <input type="text" id="petaVishay" name="petaVishay">
+
+    <label for="sandarbh">સંદર્ભ:</label>
+    <input type="text" id="sandarbh" name="sandarbh">
+
+    <label for="prasangTarikh">પ્રસંગ ની તારીખ:</label>
+    <input type="date" id="prasangTarikh" name="prasangTarikh">
+
+    <label for="prasangGujaratiTarikh">પ્રસંગ ની ગુજરાતી તારીખ:</label>
+    <input type="text" id="prasangGujaratiTarikh" name="prasangGujaratiTarikh">
+
+    <label for="prasangLekhak">પ્રસંગ ના લેખક:</label>
+    <input type="text" id="prasangLekhak" name="prasangLekhak">
+
+    <label for="shlokSakhi">શ્લોક / સાખી:</label>
+    <textarea id="shlokSakhi" name="shlokSakhi"></textarea>
+
+    <label for="visheshNodh">વિશેષ નોંધ:</label>
+    <textarea id="visheshNodh" name="visheshNodh"></textarea>
+
+    <label for="prasang">પ્રસંગ:</label>
+    <textarea id="prasang" name="prasang"></textarea>
+
+    <label for="patraNaam">પાત્ર નું નામ:</label>
+    <input type="text" id="patraNaam" name="patraNaam">
+
+    <label for="patraGaam">પાત્ર નું ગામ:</label>
+    <input type="text" id="patraGaam" name="patraGaam">
+
+    <label for="janamTarikh">પાત્ર ની જન્મ તારીખ:</label>
+    <input type="date" id="janamTarikh" name="janamTarikh">
+
+    <label for="gujaratiJanamTarikh">પાત્ર ની ગુજરાતી જન્મ તારીખ:</label>
+    <input type="text" id="gujaratiJanamTarikh" name="gujaratiJanamTarikh">
+
+    <label for="mrutyuTarikh">પાત્ર ની મૃત્યુ તારીખ:</label>
+    <input type="date" id="mrutyuTarikh" name="mrutyuTarikh">
+
+    <label for="gujaratiMrutyuTarikh">પાત્ર ની ગુજરાતી મૃત્યુ તારીખ:</label>
+    <input type="text" id="gujaratiMrutyuTarikh" name="gujaratiMrutyuTarikh">
+
+    <div class="button-group">
+      <button type="submit">Save and Continue</button>
+      <button type="submit">Save and Close</button>
+      <button type="button" onclick="history.back()">Back</button>
+    </div>
+  </form>
+
+</body>
+</html>
